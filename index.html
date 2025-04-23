@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">  
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XENDEREX PORTFOLIO</title>
+</head>
+<body>
+
+
+
+
+
+  <nav class="xend-nav">
+    <div class="nav-left">
+      <img src="logo.png" alt="Logo" class="nav-logo">
+    </div>
+  
+    <div class="nav-middle">
+      <div class="nav-expandable">
+        <div class="nav-loader"></div>
+        <ul class="nav-links" id="navDropdown">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="nav-right">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="hero-page" id="home">
+
+  <div class="centered-content">
+    <img src="cat-white.png" alt="WhiteCatus" class="centered-image">
+    <p class="centered-text">HI I AM <span class="purple">XENDEREX</span> WELCOME TO MY <span class="blue">PARTY</span></p>
+    <button class="CHAOS"><a href="#about">UNLEASH THE CHAOS</a></button>
+  </div>
+
+</section>
+
+<section class="about-me" id="about">
+  <div class="about-div">
+    <div class="text">
+      <h2>// ABOUT XENDEREX</h2>
+      <p>
+        I’m <span class="highlight">XendereX</span> and my real name is Peter.<br><br>
+        I am a digital creative, video editor, and someone who genuinely enjoys what he does.<br><br>
+        I’m currently still studying and constantly leveling up my skills in <span class="highlight">Premiere Pro</span>, <span class="highlight">Adobe Animate</span>, <span class="highlight">Photoshop</span>,<span class="highlight">Illustrator</span> and in <span class="highlight">  WEB DEVELOPMENT</span>.<br><br>
+        I’m passionate about visual storytelling, obsessed with clean edits, and always hunting for that “wow” moment in a project.
+        Whether it’s a frame-perfect cut or a slick design, I want it to hit right.<br><br>
+        Outside the creative chaos, I’m into gaming, tech, and keeping up with visual trends—not just to follow them, but to understand how they work and make them my own.<br><br>
+        My goal? Keep growing, keep creating, and maybe someday... conquer the algorithm.<br>
+        Until then, you’ll find me somewhere between the timeline, the canvas, and a 40+ opened Chrome tabs. 
+        <br>
+        <span class="glitch">// System online. Creativity loaded. Let’s go.</span>
+      </p>
+    </div>
+
+    
+
+    <div class="image">
+      <img src="oval-new.png" alt="XendereX"/>
+    </div>
+
+
+  </div>
+
+
+  
+
+
+
+</section>
+
+
+<section class="video-gallery" id="projects">
+  <h2 class="glitch-title">VIDEO VAULT</h2>
+  <p class="glitch-title">TRAILER RECREATIONS</p>
+  <div class="video-grid">
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+      <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%"><iframe allow="fullscreen" allowfullscreen height="100%" src="https://streamable.com/e/v76qtz?" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
+    </div>
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+      <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%"><iframe allow="fullscreen" allowfullscreen height="100%" src="https://streamable.com/e/ffp5za?" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
+    </div>
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+      <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%"><iframe allow="fullscreen" allowfullscreen height="100%" src="https://streamable.com/e/xp08ni?" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="contact-section" id="contact">
+  <h2>CONTACT ME</h2>
+  <p>Work, question or just chit-chat I am here for you :P </p>
+  <div class="contact-flexbox">
+  <form action="https://formspree.io/f/xnndqjdd" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="_replyto" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="submit-btn">Send</button>
+  </form>
+
+  <img src="cat-speaking.png">
+</div>
+</section>  
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  const loader = document.querySelector('.nav-loader');
+  const dropdown = document.getElementById('navDropdown');
+
+  let dropdownOpen = false;
+
+  // Toggle dropdown visibility on click
+  loader.addEventListener('click', (e) => {
+    e.stopPropagation();
+    dropdownOpen = !dropdownOpen;
+    dropdown.classList.toggle('show', dropdownOpen);
+  });
+
+  // Close dropdown if clicked outside
+  document.addEventListener('click', (e) => {
+    if (dropdownOpen && !dropdown.contains(e.target) && !loader.contains(e.target)) {
+      dropdownOpen = false;
+      dropdown.classList.remove('show');
+    }
+  });
+
+  // Close dropdown if user scrolls
+  window.addEventListener('scroll', () => {
+    if (dropdownOpen) {
+      dropdownOpen = false;
+      dropdown.classList.remove('show');
+    }
+  });
+
+  // Prevent dropdown from closing when clicking inside it
+  dropdown.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
